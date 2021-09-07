@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Quebec";
-  src: url(../fonts/Quebec-Trial.otf);
+  src: url(../assets/fonts/Quebec-Trial.otf);
 }
 
 :root {
@@ -20,6 +20,9 @@
   --secondary-font: "Quebec";
   --ticket-font: "Stardos Stencil", cursive;
   --heading-font: "Source Sans Pro", sans-serif;
+
+  /* images */
+  --landing-background: url(../assets/img/landingpage-background.png);
 }
 /* animations */
 @keyframes slideIn {
@@ -29,6 +32,17 @@
   }
   to {
     left: 0%;
+    opacity: 95%;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    top: 18%;
+    opacity: 0%;
+  }
+  to {
+    top: 22%;
     opacity: 95%;
   }
 }

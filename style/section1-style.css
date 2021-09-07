@@ -5,10 +5,11 @@
   height: 100vh;
 }
 .bg {
-  background: url(../img/landingpage-background.png) no-repeat;
+  background: var(--landing-background) no-repeat;
   background-size: cover;
   height: 100%;
   width: 50rem;
+  z-index: -1;
 }
 .ticket {
   background-color: var(--accent-color);
@@ -42,6 +43,7 @@
   width: 50%;
   height: 60%;
   margin-right: 15rem;
+  animation: slideDown 0.7s;
 }
 
 .content .heading {
