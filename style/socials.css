@@ -1,0 +1,25 @@
+@import url(./ressources.css);
+.socials {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0 1rem;
+  justify-content: space-around;
+  animation: slideIn 1.3s;
+}
+.socials i {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  transition: color 0.8s;
+}
+.socials i:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: color 0.8s;
+}

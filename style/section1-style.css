@@ -1,0 +1,72 @@
+@import url(./ressources.css);
+.section1 {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+}
+.bg {
+  background: url(../img/landingpage-background.png) no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 50rem;
+}
+.ticket {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  font-family: var(--ticket-font);
+  padding: 0.3rem 0.6rem 0.1rem 0.6rem;
+  letter-spacing: 0.1em;
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  transform: rotateZ(90deg);
+  transform-origin: left bottom;
+  transition: color 2s;
+  transition: background-color 1.8s;
+  animation: slideIn 1.2s;
+}
+.ticket:hover {
+  color: var(--accent-color);
+  background-color: var(--secondary-color);
+  cursor: crosshair;
+  box-shadow: 4px -4px 10px rgba(0, 0, 0, 0.096);
+  transition: box-shadow 1s;
+  transition: color 2s;
+  transition: background-color 1.8s;
+}
+.content {
+  position: absolute;
+  top: 22%;
+  right: 0%;
+  width: 50%;
+  height: 60%;
+  margin-right: 15rem;
+}
+
+.content .heading {
+  font-family: var(--heading-font);
+  font-weight: 900;
+  font-size: 10rem;
+  letter-spacing: 0.17em;
+  line-height: 0.9;
+  color: var(--secondary-color);
+  width: 100%;
+  margin-bottom: 4.5rem;
+  text-shadow: 14px 14px #1e1b1a85;
+  transition: text-shadow 1.4s;
+}
+.content .heading:hover {
+  text-shadow: 18px 18px #42404085;
+  transition: color 1s;
+  transition: text-shadow 0.7s;
+  cursor: crosshair;
+}
+.content h2 {
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  padding-left: 10px;
+  margin-bottom: 1rem;
+}

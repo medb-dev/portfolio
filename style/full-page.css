@@ -1,0 +1,35 @@
+@import url(./ressources.css);
+*,
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+.fullpage {
+  z-index: -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.fullpage::-webkit-scrollbar {
+  display: none;
+}
+
+.section {
+  scroll-snap-align: start;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0px;
+  padding-right: 15rem;
+}
