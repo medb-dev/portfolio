@@ -5,31 +5,33 @@ body {
   padding: 0px;
   box-sizing: border-box;
   font-family: var(--primary-font);
+  cursor: crosshair;
 }
 
-.fullpage {
-  z-index: -1;
+#full-page {
+  /* z-index: -1;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr; */
   height: 100vh;
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
   scroll-behavior: smooth;
   margin: 0px;
   padding: 0px;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  /* -ms-overflow-style: none;
+  scrollbar-width: none; */
 }
-.fullpage::-webkit-scrollbar {
+#full-page::-webkit-scrollbar {
   display: none;
 }
 
 .section {
   scroll-snap-align: start;
+  overflow-y: scroll;
+  background-color: black;
+  position: relative;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-  margin: 0px;
   padding-right: 15rem;
 }

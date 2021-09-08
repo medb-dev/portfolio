@@ -5,6 +5,7 @@
   right: 0%;
   margin-right: 15rem;
   margin-top: 1.5rem;
+  animation: start 1s;
 }
 .nav-links {
   display: flex;
@@ -16,16 +17,17 @@
 }
 .nav-links a {
   text-decoration: none;
-  color: white;
+  color: var(--secondary-color);
   font-family: var(--primary-font);
   font-weight: 600;
   font-size: 1.5rem;
   transition: color 300ms ease-in;
   position: relative;
   letter-spacing: 0.3em;
+  user-select: none;
 }
 .nav-links a:hover {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   transition: color 1ms ease-in;
   cursor: crosshair;
 }
@@ -39,9 +41,19 @@
   width: 0;
   height: 2px;
   transition: width 0.25s;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 .nav-links a:hover::after {
   width: 100%;
   transition: width 0.8s;
+}
+@keyframes start {
+  from {
+    top: -4%;
+    opacity: 0%;
+  }
+  to {
+    top: 0%;
+    opacity: 99%;
+  }
 }

@@ -1,12 +1,12 @@
 /* ---- particles.js container ---- */
 #particles-js {
   position: absolute;
-  right: 5%;
-  bottom: 5%;
-  width: 60%;
-  height: 70%;
+  right: 2%;
+  bottom: 2%;
+  width: 68%;
+  height: 100%;
   background-color: transparent;
-  background-image: url("");
+  background-image: url("../assets/");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;

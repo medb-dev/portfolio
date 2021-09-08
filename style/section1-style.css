@@ -1,8 +1,6 @@
 @import url(./ressources.css);
 .section1 {
-  position: relative;
   background-color: black;
-  height: 100vh;
 }
 .bg {
   background: var(--landing-background) no-repeat;
@@ -20,16 +18,22 @@
   letter-spacing: 0.1em;
   position: absolute;
   top: 0.5rem;
-  left: 0;
+  left: 1%;
   transform: rotateZ(90deg);
-  transform-origin: left bottom;
+  /*transform-origin: left bottom;
   transition: color 2s;
-  transition: background-color 1.8s;
-  animation: slideIn 1.2s;
+  transition: background-color 1.8s; */
+  /* animation: slideIn 1.2s; */
+  user-select: none;
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-animation: fall 4s;
+  animation: fall 4s;
 }
 .ticket:hover {
   color: var(--accent-color);
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   cursor: crosshair;
   box-shadow: 4px -4px 10px rgba(0, 0, 0, 0.096);
   transition: box-shadow 1s;
@@ -38,9 +42,9 @@
 }
 .content {
   position: absolute;
-  top: 22%;
+  top: 14%;
   right: 0%;
-  width: 50%;
+  width: 60%;
   height: 60%;
   margin-right: 15rem;
   animation: slideDown 0.7s;
@@ -49,19 +53,20 @@
 .content .heading {
   font-family: var(--heading-font);
   font-weight: 900;
-  font-size: 10rem;
+  font-size: calc(6rem + 4vw);
   letter-spacing: 0.17em;
   line-height: 0.9;
   color: var(--secondary-color);
   width: 100%;
   margin-bottom: 4.5rem;
   text-shadow: 14px 14px #1e1b1a85;
-  transition: text-shadow 1.4s;
+  transition: text-shadow 1.2s;
+  user-select: none;
 }
 .content .heading:hover {
-  text-shadow: 18px 18px #42404085;
+  text-shadow: 18px 27px #42404070;
   transition: color 1s;
-  transition: text-shadow 0.7s;
+  transition: text-shadow 1s;
   cursor: crosshair;
 }
 .content h2 {
@@ -71,4 +76,106 @@
   color: var(--primary-color);
   padding-left: 10px;
   margin-bottom: 1rem;
+  user-select: none;
+}
+/* Scroll down style */
+a {
+  padding-top: 60px;
+}
+a span {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* Ticket animation  */
+@-webkit-keyframes fall {
+  from,
+  15% {
+    -webkit-transform: rotate(0) translateX(0);
+    transform: rotate(0) translateX(0);
+    opacity: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.07, 2.02, 0.67, 0.57);
+    animation-timing-function: cubic-bezier(0.07, 2.02, 0.67, 0.57);
+  }
+  50%,
+  60% {
+    -webkit-transform: rotate(90deg) translateX(0);
+    transform: rotate(90deg) translateX(0);
+    opacity: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.13, 0.84, 0.82, 1);
+    animation-timing-function: cubic-bezier(0.13, 0.84, 0.82, 1);
+  }
+}
+
+@keyframes fall {
+  from,
+  15% {
+    -webkit-transform: rotate(0) translateX(0);
+    transform: rotate(0) translateX(0);
+    opacity: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.07, 2.02, 0.67, 0.57);
+    animation-timing-function: cubic-bezier(0.07, 2.02, 0.67, 0.57);
+  }
+  50%,
+  60% {
+    -webkit-transform: rotate(90deg) translateX(0);
+    transform: rotate(90deg) translateX(0);
+    opacity: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.13, 0.84, 0.82, 1);
+    animation-timing-function: cubic-bezier(0.13, 0.84, 0.82, 1);
+  }
 }

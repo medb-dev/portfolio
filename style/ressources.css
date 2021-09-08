@@ -10,6 +10,7 @@
 :root {
   /* colors */
   --bg-color: black;
+  --bg-linear-color: linear-gradient(90deg, #13120d 0%, #0f0e0b 10.01%, #080806 20.77%, #000000 32.69%);
   --primary-color: white;
   --secondary-color: #dfc69c;
   --accent-color: #1e1b1a;
@@ -38,11 +39,11 @@
 
 @keyframes slideDown {
   from {
-    top: 18%;
+    top: 9%;
     opacity: 0%;
   }
   to {
-    top: 22%;
+    top: 14%;
     opacity: 95%;
   }
 }
