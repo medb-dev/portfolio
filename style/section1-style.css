@@ -29,7 +29,8 @@
   -ms-transform-origin: left center;
   transform-origin: left center;
   -webkit-animation: fall 4s;
-  animation: fall 4s;
+  animation: tickectIn 2s ease-in, fall 3s;
+  animation-delay: 0s, 1.999s;
 }
 .ticket:hover {
   color: var(--accent-color);
@@ -142,6 +143,20 @@ a span::before {
   }
 }
 /* Ticket animation  */
+@keyframes tickectIn {
+  from {
+    -webkit-transform: rotate(0) translateX(0);
+    transform: rotate(0) translateX(0);
+    opacity: 0;
+    left: -10%;
+  }
+  to {
+    -webkit-transform: rotate(0) translateX(0);
+    transform: rotate(0) translateX(0);
+    opacity: 1;
+    left: 0%;
+  }
+}
 @-webkit-keyframes fall {
   from,
   15% {

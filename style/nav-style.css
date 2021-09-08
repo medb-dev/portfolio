@@ -44,7 +44,7 @@
   background-color: var(--primary-color);
 }
 .nav-links a:hover::after {
-  width: 100%;
+  width: 50%;
   transition: width 0.8s;
 }
 @keyframes start {
