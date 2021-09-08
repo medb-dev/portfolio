@@ -29,7 +29,7 @@
   -ms-transform-origin: left center;
   transform-origin: left center;
   -webkit-animation: fall 4s;
-  animation: tickectIn 2s ease-in, fall 3s;
+  animation: tickectIn 2s ease-in, fall 5s;
   animation-delay: 0s, 1.999s;
 }
 .ticket:hover {

@@ -9,18 +9,15 @@ body {
 }
 
 #full-page {
-  /* z-index: -1;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; */
   height: 100vh;
   scroll-snap-type: y mandatory;
-  /* overflow-y: scroll;
-  overflow-x: hidden; */
+  overflow-y: scroll;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   margin: 0px;
   padding: 0px;
-  /* -ms-overflow-style: none;
-  scrollbar-width: none; */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 #full-page::-webkit-scrollbar {
   display: none;
