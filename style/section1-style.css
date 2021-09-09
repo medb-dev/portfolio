@@ -18,7 +18,7 @@
   letter-spacing: 0.1em;
   position: absolute;
   top: 0.5rem;
-  left: 1%;
+  left: 0%;
   transform: rotateZ(90deg);
   /*transform-origin: left bottom;
   transition: color 2s;
@@ -27,7 +27,7 @@
   user-select: none;
   -webkit-transform-origin: left center;
   -ms-transform-origin: left center;
-  transform-origin: left center;
+  transform-origin: left bottom;
   -webkit-animation: fall 4s;
   animation: tickectIn 2s ease-in, fall 5s;
   animation-delay: 0s, 1.999s;
