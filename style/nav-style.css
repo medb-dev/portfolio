@@ -3,7 +3,7 @@
   position: absolute;
   top: 0%;
   right: 0%;
-  margin-right: 15rem;
+  margin-right: var(--right-padding);
   margin-top: 1.5rem;
   animation: start 1s;
 }

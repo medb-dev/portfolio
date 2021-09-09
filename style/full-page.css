@@ -20,7 +20,8 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-#full-page::-webkit-scrollbar {
+
+*::-webkit-scrollbar {
   display: none;
 }
 
@@ -31,5 +32,5 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
-  padding-right: 15rem;
+  padding-right: var(--right-padding);
 }

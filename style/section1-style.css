@@ -45,7 +45,7 @@
   position: absolute;
   top: 14%;
   right: 0%;
-  width: 60%;
+  width: 55%;
   height: 60%;
   margin-right: 15rem;
   animation: slideDown 0.7s;
@@ -54,7 +54,7 @@
 .content .heading {
   font-family: var(--heading-font);
   font-weight: 900;
-  font-size: calc(6rem + 4vw);
+  font-size: calc(2.95rem + 7vw);
   letter-spacing: 0.17em;
   line-height: 0.9;
   color: var(--secondary-color);
@@ -72,7 +72,7 @@
 }
 .content h2 {
   font-family: var(--primary-font);
-  font-size: 1.6rem;
+  font-size: 1.45rem;
   font-weight: 500;
   color: var(--primary-color);
   padding-left: 10px;
@@ -147,7 +147,7 @@ a span::before {
   from {
     -webkit-transform: rotate(0) translateX(0);
     transform: rotate(0) translateX(0);
-    opacity: 0;
+    opacity: 1;
     left: -10%;
   }
   to {

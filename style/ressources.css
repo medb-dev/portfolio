@@ -8,6 +8,8 @@
 }
 
 :root {
+  /* Values */
+  --right-padding: calc(1rem + 12vw);
   /* colors */
   --bg-color: black;
   --bg-linear-color: linear-gradient(90deg, #13120d 0%, #0f0e0b 10.01%, #080806 20.77%, #000000 32.69%);
