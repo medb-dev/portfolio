@@ -5,7 +5,7 @@ body {
   padding: 0px;
   box-sizing: border-box;
   font-family: var(--primary-font);
-  cursor: crosshair;
+  /* cursor: crosshair; */
 }
 
 #full-page {

@@ -1,6 +1,7 @@
 @import url(./ressources.css);
 .section1 {
   background-color: black;
+  cursor: crosshair;
 }
 .bg {
   background: var(--landing-background) no-repeat;
@@ -140,57 +141,5 @@ a span::before {
   }
   100% {
     opacity: 0;
-  }
-}
-/* Ticket animation  */
-@keyframes tickectIn {
-  from {
-    -webkit-transform: rotate(0) translateX(0);
-    transform: rotate(0) translateX(0);
-    opacity: 1;
-    left: -10%;
-  }
-  to {
-    -webkit-transform: rotate(0) translateX(0);
-    transform: rotate(0) translateX(0);
-    opacity: 1;
-    left: 0%;
-  }
-}
-@-webkit-keyframes fall {
-  from,
-  15% {
-    -webkit-transform: rotate(0) translateX(0);
-    transform: rotate(0) translateX(0);
-    opacity: 1;
-    -webkit-animation-timing-function: cubic-bezier(0.07, 2.02, 0.67, 0.57);
-    animation-timing-function: cubic-bezier(0.07, 2.02, 0.67, 0.57);
-  }
-  50%,
-  60% {
-    -webkit-transform: rotate(90deg) translateX(0);
-    transform: rotate(90deg) translateX(0);
-    opacity: 1;
-    -webkit-animation-timing-function: cubic-bezier(0.13, 0.84, 0.82, 1);
-    animation-timing-function: cubic-bezier(0.13, 0.84, 0.82, 1);
-  }
-}
-
-@keyframes fall {
-  from,
-  15% {
-    -webkit-transform: rotate(0) translateX(0);
-    transform: rotate(0) translateX(0);
-    opacity: 1;
-    -webkit-animation-timing-function: cubic-bezier(0.07, 2.02, 0.67, 0.57);
-    animation-timing-function: cubic-bezier(0.07, 2.02, 0.67, 0.57);
-  }
-  50%,
-  60% {
-    -webkit-transform: rotate(90deg) translateX(0);
-    transform: rotate(90deg) translateX(0);
-    opacity: 1;
-    -webkit-animation-timing-function: cubic-bezier(0.13, 0.84, 0.82, 1);
-    animation-timing-function: cubic-bezier(0.13, 0.84, 0.82, 1);
   }
 }

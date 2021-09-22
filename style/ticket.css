@@ -1,0 +1,95 @@
+@import url(./ressources.css);
+
+.ticket {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  font-family: var(--ticket-font);
+  padding: 0.3rem 0.6rem 0.1rem 0.6rem;
+  letter-spacing: 0.1em;
+  position: absolute;
+  top: 0.5rem;
+  left: 0%;
+  transform: rotateZ(90deg);
+  user-select: none;
+  -webkit-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  transform-origin: left bottom;
+}
+.t-home {
+  -webkit-animation: fall 4s;
+  animation: tickectIn 1.4999s ease-in, fall 5s;
+  animation-delay: 0s, 1.5s;
+}
+.t-projects {
+  -webkit-animation: none;
+  animation: none;
+  animation-delay: none;
+}
+.t-contact {
+  -webkit-animation: none;
+  animation: none;
+  animation-delay: none;
+}
+
+.tecket:hover {
+  color: var(--accent-color);
+  background-color: var(--primary-color);
+  cursor: crosshair;
+  box-shadow: 4px -4px 10px rgba(0, 0, 0, 0.096);
+  transition: box-shadow 1s;
+  transition: color 2s;
+  transition: background-color 1.8s;
+}
+
+@keyframes tickectIn {
+  from {
+    -webkit-transform: rotate(0) translateX(0);
+    transform: rotate(0) translateX(0);
+    opacity: 1;
+    left: -10%;
+  }
+  to {
+    -webkit-transform: rotate(0) translateX(0);
+    transform: rotate(0) translateX(0);
+    opacity: 1;
+    left: 0%;
+  }
+}
+@-webkit-keyframes fall {
+  from,
+  15% {
+    -webkit-transform: rotate(0) translateX(0);
+    transform: rotate(0) translateX(0);
+    opacity: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.07, 2.02, 0.67, 0.57);
+    animation-timing-function: cubic-bezier(0.07, 2.02, 0.67, 0.57);
+  }
+  50%,
+  60% {
+    -webkit-transform: rotate(90deg) translateX(0);
+    transform: rotate(90deg) translateX(0);
+    opacity: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.13, 0.84, 0.82, 1);
+    animation-timing-function: cubic-bezier(0.13, 0.84, 0.82, 1);
+  }
+}
+
+@keyframes fall {
+  from,
+  15% {
+    -webkit-transform: rotate(0) translateX(0);
+    transform: rotate(0) translateX(0);
+    opacity: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.07, 2.02, 0.67, 0.57);
+    animation-timing-function: cubic-bezier(0.07, 2.02, 0.67, 0.57);
+  }
+  50%,
+  60% {
+    -webkit-transform: rotate(90deg) translateX(0);
+    transform: rotate(90deg) translateX(0);
+    opacity: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.13, 0.84, 0.82, 1);
+    animation-timing-function: cubic-bezier(0.13, 0.84, 0.82, 1);
+  }
+}

@@ -1,4 +1,7 @@
 @import url(./ressources.css);
 .section2 {
-  background: rgb(235, 56, 56);
+  /* background: rgb(235, 56, 56); */
+  background: rgb(30, 30, 30);
+  cursor: url(../assets/img/cursor.svg) 1 1, auto;
+  /* cursor: none; */
 }
