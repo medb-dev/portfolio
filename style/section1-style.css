@@ -46,7 +46,7 @@
   position: absolute;
   top: 14%;
   right: 0%;
-  width: 55%;
+  width: 60%;
   height: 60%;
   margin-right: 15rem;
   animation: slideDown 0.7s;
@@ -72,11 +72,13 @@
   cursor: crosshair;
 }
 .content h2 {
+  width: 70%;
+  padding-top: 10px;
+  padding-left: 10px;
   font-family: var(--primary-font);
-  font-size: 1.45rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: var(--primary-color);
-  padding-left: 10px;
   margin-bottom: 1rem;
   user-select: none;
 }
